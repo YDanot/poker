@@ -1,7 +1,7 @@
-#Poker Hands
+# Poker Hands
 _This kata is blatantly stolen from acm.uva.es/p/v103/10315.html It is a subset of KataTexasHoldEm , which is a very large Kata._
 
-##Problem Description
+## Problem Description
 
 Your job is to compare several pairs of poker hands and to indicate which, if either, has a higher rank.
 
