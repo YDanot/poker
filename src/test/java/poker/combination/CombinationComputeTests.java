@@ -1,6 +1,8 @@
 package poker.combination;
 
+import one.util.streamex.StreamEx;
 import org.junit.Test;
+import poker.Hand;
 import poker.card.Card;
 import poker.card.Value;
 
@@ -63,6 +65,16 @@ public class CombinationComputeTests {
     public void straight_flush() {
         assertThat(combinationsOf("hK hQ hJ hA h10")).isEqualTo(
                 "STRAIGHT_FLUSH ACE");
+    }
+
+    @Test
+    public void texas() {
+        assertThat(combinationsOf("hK hQ hJ hA h10 h9 cA")).isEqualTo(
+                "STRAIGHT_FLUSH ACE");
+
+        assertThat(combinationsOf("hK cK sK dK h10 hA cA")).isEqualTo(
+                "QUADS KING - ACE");
+
     }
 
     private String combinationsOf(String hand) {

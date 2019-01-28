@@ -16,7 +16,11 @@ public enum Value {
     KING,
     ACE;
 
-    public int gap(Value value){
+    private int gapWith(Value value){
         return Math.abs(this.ordinal() - value.ordinal());
+    }
+
+    public boolean suite(Value value){
+        return gapWith(value) == 1;
     }
 }
