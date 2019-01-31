@@ -1,8 +1,6 @@
 package poker.combination;
 
-import one.util.streamex.StreamEx;
 import org.junit.Test;
-import poker.Hand;
 import poker.card.Card;
 import poker.card.Value;
 
